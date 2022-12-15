@@ -23,7 +23,8 @@ if(Content == "tire minha selfie"){
 }
 }
 function speak(){
-    var synth ="Tirando sua selfie em 5 segundos";
+    synth= window.SpeechSynthesis;
+    var speakData ="Tirando sua selfie em 5 segundos";
     utterThis = new SpeechSynthesisUtterance(speakData);
     synth.speak(utterThis);
     Webcam.attach(camera);
