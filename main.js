@@ -23,7 +23,7 @@ if(Content == "tire minha selfie"){
 }
 }
 function speak(){
-    synth= window.SpeechSynthesis;
+    synth= window.speechSynthesis;
     var speakData ="Tirando sua selfie em 5 segundos";
     utterThis = new SpeechSynthesisUtterance(speakData);
     synth.speak(utterThis);
